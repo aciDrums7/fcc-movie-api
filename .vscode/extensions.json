@@ -1,0 +1,23 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "alefragnani.bookmarks",
+        "ms-vscode-remote.remote-containers",
+        "pkief.material-icon-theme",
+        "johnpapa.vscode-peacock",
+        "enkia.tokyo-night",
+        "redhat.java",
+        "vscjava.vscode-java-pack",
+        "vmware.vscode-boot-dev-pack",
+        "ecmel.vscode-spring-boot",
+        "kevinghadyani.vscode-colormate",
+        "vscjava.vscode-gradle",
+        "oderwat.indent-rainbow",
+        "vscjava.vscode-lombok",
+        "yzhang.markdown-all-in-one",
+        "redhat.fabric8-analytics",
+        "tabnine.tabnine-vscode",
+        "redhat.vscode-yaml",
+        "eamodio.gitlens"
+    ]
+}

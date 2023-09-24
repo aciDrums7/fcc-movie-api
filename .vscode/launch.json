@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "spring-fcc-fast-api",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "org.freecodecamp.acidrums7.fccmovieapi.FccMovieApiApplication",
+            "projectName": "fcc-movie-api",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": ""
+        }
+    ]
+}
