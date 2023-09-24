@@ -18,6 +18,7 @@
         "redhat.fabric8-analytics",
         "tabnine.tabnine-vscode",
         "redhat.vscode-yaml",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "sonarsource.sonarlint-vscode"
     ]
 }

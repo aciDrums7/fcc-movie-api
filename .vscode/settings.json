@@ -20,5 +20,5 @@
     },
     "peacock.remoteColor": "#589133",
     "java.compile.nullAnalysis.mode": "automatic",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "automatic"
 }
