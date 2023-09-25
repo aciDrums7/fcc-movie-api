@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.server.ResponseStatusException;
 
 @Controller
-@RequestMapping("/api/v1/movies")
+@RequestMapping("/api/v1/movie")
 public class MovieControllerImpl implements MovieController {
 
     private final MovieService movieService;

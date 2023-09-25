@@ -57,7 +57,7 @@ public class MovieServiceImpl implements MovieService {
 
     @Override
     public Optional<MovieDto> findByImdbId(String imdbId) {
-        Optional<MovieEntity> movieEntityOptional = movieRepository.findMovieByImdbId(imdbId);
+        Optional<MovieEntity> movieEntityOptional = movieRepository.findByImdbId(imdbId);
         if (movieEntityOptional.isPresent()) {
             return Optional.of(movieMapper.toDto(movieEntityOptional.get()));
         } else {

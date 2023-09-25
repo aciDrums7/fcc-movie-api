@@ -7,8 +7,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
-@Document(collation = "reviews")
+@Document(collection = "reviews")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,5 +18,6 @@ public class ReviewEntity {
     @Id
     private ObjectId id;
 
+    @NonNull
     private String body;
 }

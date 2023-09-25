@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 public interface GenericController<T, ID> {
 
-    @GetMapping(produces = "application/json")
+    @GetMapping(value = "/", produces = "application/json")
     public ResponseEntity<List<T>> findAll();
 
     @GetMapping(value = "/{id}", produces = "application/json")
     public ResponseEntity<T> findById(@PathVariable ID id);
 
-    @PostMapping(consumes = "application/json", produces = "application/json")
+    @PostMapping(value = "/", consumes = "application/json", produces = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<T> post(@RequestBody T body);
 
