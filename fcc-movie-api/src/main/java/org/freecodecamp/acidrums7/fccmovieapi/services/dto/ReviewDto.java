@@ -14,4 +14,6 @@ public class ReviewDto {
     private ObjectId id;
     
     private String body;
+
+    private String imdbId;
 }

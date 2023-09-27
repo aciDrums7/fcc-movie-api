@@ -1,14 +1,17 @@
 package org.freecodecamp.acidrums7.fccmovieapi.controllers.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.bson.types.ObjectId;
 import org.freecodecamp.acidrums7.fccmovieapi.controllers.api.ReviewController;
 import org.freecodecamp.acidrums7.fccmovieapi.services.dto.ReviewDto;
 import org.freecodecamp.acidrums7.fccmovieapi.services.interfaces.ReviewService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.server.ResponseStatusException;
 
 @Controller
 @RequestMapping("/api/v1/review")
@@ -33,8 +36,13 @@ public class ReviewControllerImpl implements ReviewController {
 
     @Override
     public ResponseEntity<ReviewDto> post(ReviewDto body) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'post'");
+        Optional<ReviewDto> reviewDto = reviewService.post(body);
+        if(reviewDto.isPresent()) {
+            return new ResponseEntity<>(reviewDto.get(), HttpStatus.CREATED);
+        } else {
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,
+                    "Creation of review failed");
+        }
     }
 
     @Override
